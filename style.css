@@ -2,7 +2,7 @@ body {
 	font-family: 'Cardo', serif;
 	font-size: 1.1rem;
 	line-height: 2em;
-	text-align: 1;
+	text-align: 1rem;
 	padding: 4rem;
 }
 
@@ -18,12 +18,11 @@ p{
 }
 
 h1,h2{
-	font-family: Geist;
+	font-family: 'Geist'; sans-serif;
 }
 
 h1{
 	font-weight: 500;
-	color: black;
 	border-bottom: 0.7rem solid black;
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
@@ -40,7 +39,7 @@ h2{
 }
 
 h3{
-	font-family: Oxanium;
+	font-family: 'Oxanium'; sans-serif;
 	font-size: 1.2rem;
 	font-weight: 600;
 	margin-bottom: 0.5rem;
