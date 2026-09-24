@@ -1,9 +1,48 @@
 body {
-	color: tomato;
-	font-family: 'futura', sans-serif;
-	font-size: 2;
-	letter-spacing: ;
-	text-align: ;
+	font-family: 'Cardo', serif;
+	font-size: 1rem;
+	line-height: 2em;
+	text-align: 1;
+	padding: 3rem;
+}
+
+h1,h2{
+	font-family: Geist;
+	font-size: 4rem;
+}
+
+h1{
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+h2{
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h3{
+	font-family: Manrope;
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+p{
+	margin-bottom: 1.5rem;
+}
+
+a{
+	color: rgb(30, 49, 255);
+	text-decoration: underline;
+}
+
+em{
+	font-style: italic;
+}
+
+***{
+	margin-block-start: 1rem;
 }
 
 :nth-child(2){letter-spacing: 0.2;}
