@@ -1,48 +1,70 @@
 body {
 	font-family: 'Cardo', serif;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	line-height: 2em;
 	text-align: 1;
-	padding: 3rem;
+	padding: 4rem;
+}
+
+.epigraph{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	margin-bottom: 2rem;
+	color: rgb(187, 68, 47);
+}
+
+p{
+	margin-bottom: 2rem;
 }
 
 h1,h2{
 	font-family: Geist;
-	font-size: 4rem;
 }
 
 h1{
 	font-weight: 500;
+	color: black;
+	border-bottom: 0.7rem solid black;
+	padding-bottom: 2rem;
 	margin-bottom: 2rem;
+	font-size: 4rem;
 }
 
 h2{
-	font-size: 2rem;
-	font-weight: 400;
+	font-size: 2.5rem;
+	font-weight: 500;
+	border-bottom: 0.5rem solid black;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
 }
 
 h3{
-	font-family: Manrope;
-	font-size: 1.4rem;
-	font-weight: 400;
-	margin-bottom: 1rem;
+	font-family: Oxanium;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
 }
 
-p{
-	margin-bottom: 1.5rem;
-}
+
 
 a{
-	color: rgb(30, 49, 255);
+	color: rgb(30, 124, 255);
 	text-decoration: underline;
+}
+
+li{
+	margin-bottom: 2rem;
 }
 
 em{
 	font-style: italic;
 }
 
+.indent{
+	text-indent: 1rem;
+}
+
 ***{
 	margin-block-start: 1rem;
 }
-
-:nth-child(2){letter-spacing: 0.2;}
