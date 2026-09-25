@@ -20,7 +20,7 @@ body {
 }
 
 p{
-	margin-bottom: 2rem;
+	margin-block-end: 2rem;
 }
 
 h1,h2{
@@ -41,7 +41,7 @@ h2{
 	border-block: 0.5rem double black;
 	padding-block: 1rem;
 	margin-block-end: 2rem;
-	margin-top: 3rem;
+	margin-block-start: 3rem;
 }
 
 h3{
