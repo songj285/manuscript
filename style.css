@@ -10,15 +10,6 @@ body {
 	padding: 4rem;
 }
 
-.epigraph{
-	font-size: 1.3rem;
-	line-height: 2rem;
-	border-block: 0.1rem solid rgb(97, 97, 97);
-	padding-block: 1rem;
-	margin-block-end: 2rem;
-	color: rgb(187, 68, 47);
-}
-
 p{
 	margin-block-end: 2rem;
 }
@@ -55,6 +46,10 @@ a{
 	text-decoration: underline;
 }
 
+q{
+	color:brown
+}
+
 li{
 	margin-block-end: 2rem;
 }
@@ -65,4 +60,18 @@ em{
 
 .indent{
 	text-indent: 1rem;
+}
+
+.epigraph{
+	font-size: 1.3rem;
+	line-height: 2rem;
+	border-block: 0.1rem solid rgb(97, 97, 97);
+	padding-block: 1rem;
+	margin-block-end: 2rem;
+	color: rgb(187, 68, 47);
+}
+
+.author{
+	font-size: 1rem;
+	padding-block-start: -2rem;
 }
