@@ -1,8 +1,9 @@
 /*base styles*/
 :root{
 	--base-type: 1rem;
-	--color-bg: rgb(210, 207, 202);
+	--color-bg: rgb(210, 203, 191);
 	--color-font: black;
+	--color-base: white;
 	--color-point: brown;
 	--font-body: 'Cardo', serif;
 	--font-bigtitle: 'Geist', sans-serif;
@@ -41,10 +42,11 @@ h1,h2,li{
 h1{
 	font-weight: 600;
 	text-align: center;
-	border-block: 0.7rem double var(--color-font);
+	border-block: 0.7rem double var(--color-point);
 	padding-block: 3rem;
 	margin-block-end: var(--size-md);
 	font-size: calc(5 * var(--base-type));
+	color: var(--color-point)
 }
 
 h2{
@@ -68,13 +70,9 @@ h3{
 	padding-block: var(--size-md);
 }
 
+/*elements*/
 p{
 	margin-block-end: var(--size-md);
-}
-
-nav ul{
-	display: flex;
-	gap: 30rem;
 }
 
 a{
@@ -82,16 +80,17 @@ a{
 }
 
 q{
-	font-weight: bold;
+	font-weight: 700;
 }
 
 li{
 	margin-block-end: var(--size-md);
-	display: block;
-	background-color: var(--color-font);
-	color: white;
-	padding-block: var(--size-sm);
-	padding-inline: var(--size-sm);
+	text-decoration: underline;
+	color: var(--color-point);
+
+	&::before{
+		content: "·";
+	}
 }
 
 em{
@@ -100,6 +99,11 @@ em{
 
 cite{
 	font-size: var(--size-sm);
+}
+
+strong{
+	font-weight: 700;
+	color: var(--color-point)
 }
 
 blockquote{
@@ -112,6 +116,7 @@ blockquote{
 	color: var(--color-font);
 }
 
+/*class*/
 .author{
 	font-size: var(--size-sm);
 	font-weight: 100;
@@ -132,7 +137,7 @@ blockquote{
 }
 
 .box{
-	border: calc(var(--size-sm) / 10) solid rgb(97, 97, 97);
+	border: calc(var(--size-sm) / 10) solid var(--color-point);
 	padding: var(--size-sm);
 }
 
@@ -141,6 +146,7 @@ blockquote{
 
 }
 
+/*identifiers*/
 #reading{
 	color: var(--color-point);
 	text-decoration: underline;
@@ -149,7 +155,7 @@ blockquote{
 #back-to-top{
 	display: block;
 	background-color: var(--color-font);
-	color: white;
+	color: var(--color-base);
 	inline-size: max-content;
 	padding-inline: var(--size-sm);
 	padding-block-start: 0.4rem;
