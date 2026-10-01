@@ -5,8 +5,8 @@ https://www.markdownguide.org/cheat-sheet/
 
 # Project 1: *Manuscript*
 
-Demo/template for our [first projects](https://typography-interaction-2627.github.io/project/1/).
+This first project in Typography/Interaction 2026 was my first coding website project after reading an essay and writing a response about it.
 
-> **Students will choose a seminal design text from [readings.design](https://readings.design), read and respond to it, and typeset their selection and reply together.**
->
-> The goal of this project is to hone your basic skills in typography, focusing on expression, hierarchy, and form appropriate to a work. You will do this through exploration, trial and error, and responding to critical feedback. And then you will execute this typesetting in code, as a web page
+In the reading <i>"MY TYPOGRAPHIES"</i> from Paul Elliman, Elliman shows that typography is much more than just printed fonts or design on a screen. He argues that our whole world is filled with readable codes and signals. He gives many different examples from daily life such as nature and technology. The reading mostly talks about that typography is not just about fixed fonts, but a living practice all over the world. 
+
+The reading was quite old, from the 1990s, so I had this concept of old style, especially with the colors and font. Also, since the author had many examples in the reading and I was quite confused with those while reading, I tried to put the layout simple and focus on the readability. For that, I only used two colors except the background color to show the strong sentences to look more straight-forward.
