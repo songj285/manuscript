@@ -1,16 +1,31 @@
+/*base styles*/
 :root{
 	--base-type: 1rem;
+	--color-bg: white;
+	--color-fg: black;
+	--font-body: 'Cardo', serif;
+	--font-bigtitle: 'Geist', sans-serif;
+	--font-smalltitle: 'Oxanium', sans-serif;
+
+	--size-sm: 1rem;
+	--size-md: 2rem;
+	--size-lg: 4rem;
+
+	/*base color/font*/
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 }
 
 body {
-	font-family: 'Cardo', serif;
+	font-family: var(--font-body);
 	font-size: 1.1rem;
-	line-height: 2em;
-	padding: 4rem;
+	line-height: 2.4rem;
+	padding: var(--size-lg);
 }
 
+/*headings*/
 h1,h2{
-	font-family: 'Geist', sans-serif;
+	font-family: var(--font-bigtitle);
 }
 
 h1{
@@ -18,27 +33,28 @@ h1{
 	text-align: center;
 	border-block: 0.7rem double black;
 	padding-block: 3rem;
-	margin-block-end: 2rem;
+	margin-block-end: var(--size-md);
 	font-size: calc(5 * var(--base-type));
 }
 
 h2{
 	font-size: 2.5rem;
 	font-weight: 500;
+	text-align: center;
 	border-block: 0.5rem double black;
-	padding-block: 1rem;
-	margin-block-end: 2rem;
+	padding-block: var(--size-sm);
+	margin-block-end: var(--size-md);
 	margin-block-start: 3rem;
 }
 
 h3{
-	font-family: 'Oxanium', sans-serif;
+	font-family: var(--font-smalltitle);
 	font-weight: 600;
 	margin-block-end: 0.5rem;
 }
 
 p{
-	margin-block-end: 2rem;
+	margin-block-end: var(--size-md);
 }
 
 a{
@@ -47,11 +63,11 @@ a{
 }
 
 q{
-	color:brown
+	font-weight: bold;
 }
 
 li{
-	margin-block-end: 2rem;
+	margin-block-end: var(--size-md);
 }
 
 em{
@@ -59,23 +75,27 @@ em{
 }
 
 cite{
-	font-size: ;
+	font-size: 0.9rem;
 }
 
 .indent{
-	text-indent: 1rem;
+	text-indent: var(--size-sm);
+}
+
+.box{
+	border: 0.1rem solid rgb(97, 97, 97);
+	padding: var(--size-sm);
 }
 
 .epigraph{
 	font-size: 1.3rem;
-	line-height: 2rem;
+	line-height: var(--size-md);
 	border-block: 0.1rem solid rgb(97, 97, 97);
-	padding-block: 1rem;
-	margin-block-end: 2rem;
+	padding-block: var(--size-sm);
+	margin-block-end: var(--size-md);
 	color: rgb(187, 68, 47);
 }
 
 .author{
-	font-size: 1rem;
-	padding-block-start: -2rem;
+	font-size: var(--size-sm);
 }
