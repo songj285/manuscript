@@ -3,6 +3,7 @@
 	--base-type: 1rem;
 	--color-bg: rgb(210, 207, 202);
 	--color-fg: black;
+	--color-point: brown;
 	--font-body: 'Cardo', serif;
 	--font-bigtitle: 'Geist', sans-serif;
 	--font-smalltitle: 'Oxanium', sans-serif;
@@ -72,6 +73,15 @@ p{
 	margin-block-end: var(--size-md);
 }
 
+nav ul{
+	display: flex;
+	gap: 33rem;
+}
+
+a{
+	color:var(--color-point);
+}
+
 q{
 	font-weight: bold;
 }
@@ -88,11 +98,15 @@ cite{
 	font-size: var(--size-sm);
 }
 
+time{
+	text-align: right;
+}
+
 blockquote{
 	font-size: 1.3rem;
 	font-weight: 800;
 	line-height: var(--size-md);
-	border-inline-start: calc(var(--size-sm) / 4) solid rgb(198, 55, 23);
+	border-inline-start: calc(var(--size-sm) / 4) solid var(--color-point);
 	padding-inline-start: var(--size-md);
 	margin-block-end: var(--size-md);
 	color: var(--color-fg);
@@ -118,7 +132,7 @@ blockquote{
 }
 
 #reading{
-	color: rgb(198, 55, 23);
+	color: var(--color-point);
 	text-decoration: underline;
 }
 
