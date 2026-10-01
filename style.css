@@ -13,7 +13,7 @@
 	--size-md: 2rem;
 	--size-lg: 4rem;
 
-	/*base color/font*/
+	/*base color&font*/
 	background-color: var(--color-bg);
 	color: var(--color-font);
 }
@@ -159,7 +159,7 @@ blockquote{
 	inline-size: max-content;
 	padding-inline: var(--size-sm);
 	padding-block-start: 0.4rem;
-	position:fixed;
+	position: fixed;
 	inset-block-end: var(--size-sm);
 	inset-inline-end: var(--size-sm);
 }
