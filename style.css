@@ -1,7 +1,7 @@
 /*base styles*/
 :root{
 	--base-type: 1rem;
-	--color-bg: white;
+	--color-bg: rgb(210, 207, 202);
 	--color-fg: black;
 	--font-body: 'Cardo', serif;
 	--font-bigtitle: 'Geist', sans-serif;
@@ -21,6 +21,15 @@ body {
 	font-size: 1.1rem;
 	line-height: 2.4rem;
 	padding: var(--size-lg);
+	background-color: rgb(210, 207, 202);
+}
+
+section{
+	max-inline-size: 100ch;
+}
+
+section > * + * {
+	margin-block-start: var(--size-sm);
 }
 
 /*headings*/
@@ -31,7 +40,7 @@ h1,h2{
 h1{
 	font-weight: 600;
 	text-align: center;
-	border-block: 0.7rem double black;
+	border-block: 0.7rem double var(--color-fg);
 	padding-block: 3rem;
 	margin-block-end: var(--size-md);
 	font-size: calc(5 * var(--base-type));
@@ -41,7 +50,7 @@ h2{
 	font-size: 2.5rem;
 	font-weight: 500;
 	text-align: center;
-	border-block: 0.5rem double black;
+	border-block: 0.4rem double var(--color-fg);
 	padding-block: var(--size-sm);
 	margin-block-end: var(--size-md);
 	margin-block-start: 3rem;
@@ -50,16 +59,17 @@ h2{
 h3{
 	font-family: var(--font-smalltitle);
 	font-weight: 600;
-	margin-block-end: 0.5rem;
+	font-size: 1.5rem;
+	margin-block-start: var(--size-lg);
+	margin-block-end: var(--size-md);
+	position: sticky;
+	inset-block-start: 0;
+	background-color: var(--color-bg);
+	padding-block: var(--size-md);
 }
 
 p{
 	margin-block-end: var(--size-md);
-}
-
-a{
-	color: rgb(198, 55, 23);
-	text-decoration: underline;
 }
 
 q{
@@ -75,7 +85,27 @@ em{
 }
 
 cite{
-	font-size: 0.9rem;
+	font-size: var(--size-sm);
+}
+
+blockquote{
+	font-size: 1.3rem;
+	font-weight: 800;
+	line-height: var(--size-md);
+	border-inline-start: calc(var(--size-sm) / 4) solid rgb(198, 55, 23);
+	padding-inline-start: var(--size-md);
+	margin-block-end: var(--size-md);
+	color: var(--color-fg);
+}
+
+.author{
+	font-size: var(--size-sm);
+	font-weight: 100;
+}
+
+.epigraph{
+	margin-block-end: 0.5rem;
+
 }
 
 .indent{
@@ -87,15 +117,18 @@ cite{
 	padding: var(--size-sm);
 }
 
-.epigraph{
-	font-size: 1.3rem;
-	line-height: var(--size-md);
-	border-block: 0.1rem solid rgb(97, 97, 97);
-	padding-block: var(--size-sm);
-	margin-block-end: var(--size-md);
-	color: rgb(187, 68, 47);
+#reading{
+	color: rgb(198, 55, 23);
+	text-decoration: underline;
 }
 
-.author{
-	font-size: var(--size-sm);
+#back-to-top{
+	display: block;
+	background-color: var(--color-fg);
+	color: white;
+	inline-size: max-content;
+	padding-inline: var(--size-sm);
+	position:fixed;
+	inset-block-end: var(--size-sm);
+	inset-inline-end: var(--size-sm);
 }
